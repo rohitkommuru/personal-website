@@ -1,0 +1,42 @@
+/* Add your existing CSS here */
+
+.footer {
+    background-color: #2c2b2b;
+    padding: 20px 10px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+    /* background-color: #2c2b2b;
+    padding: 10px 20px;
+    display: flex; */
+  }
+  
+  .footer-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-item {
+    display: inline-block;
+  }
+  
+  .footer-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .footer-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Add this CSS to ensure the footer doesn't overlap other content */
+  body {
+    margin-bottom: 60px; /* Adjust this value based on the footer height */
+  }
+  

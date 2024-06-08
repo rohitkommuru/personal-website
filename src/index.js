@@ -1,12 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './MainPage.css';
-import TicTacToe from './TicTacToe';
+import Experience from './Experience.js'
+import NavBar from './NavBar.js'
+import Projects from './Projects.js'
+import Footer from './Footer.js'
 
 function MainPage() {
   return (
-    <div>
-      <div id="container" className="clearfix">
+      <div>
+        <NavBar /> 
+        <Experience />
+        <Projects />
+        <Footer />
+      </div>
+  );
+}
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<MainPage />);
+
+// Deprecated Code 
+/* 
+div id="container" className="clearfix">
         <div id="text-area">
           <div id="Education">
             <h2>Education</h2>
@@ -144,9 +159,4 @@ function MainPage() {
           </div>
         </div>
       </div>
-      <TicTacToe />
-    </div>
-  );
-}
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<MainPage />);
+*/ 
